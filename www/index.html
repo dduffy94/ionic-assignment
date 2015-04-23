@@ -1,34 +1,174 @@
-<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Calorific</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-    <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-  </head>
-  <body ng-app="calorific">
+    <script type="text/javascript">
+      angular.module('ionic-navview', ['ionic'])
 
-    <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Calorific</h1>
-      </ion-header-bar>
-      <ion-content>
-      </ion-content>
-    </ion-pane>
+      .config(function($stateProvider, $urlRouterProvider) {
+
+
+        $urlRouterProvider.otherwise('/');
+
+        $stateProvider
+
+        .state('state1', {
+          url: '/',
+          templateUrl: 'state1.html'
+        })
+
+        .state('state2', {
+          url: '/state2',
+          templateUrl: 'state2.html'
+        })
+
+	.state('state3', {
+          url: '/state3',
+          templateUrl: 'state3.html'
+       })
+
+	 .state('state4', {
+          url: '/state4',
+          templateUrl: 'state4.html'
+       })
+	
+	 .state('state5', {
+          url: '/state5',
+          templateUrl: 'state5.html'
+       });
+	
+})
+    </script>
+
+  </head>
+  <body ng-app="ionic-navview">
+    <ion-nav-view>
+    </ion-nav-view>
+
+    <script type="text/ng-template" id="state1.html">
+      <ion-view view-title="Home">
+        <iion-content>
+          <h2>Supermacs!</h2>
+          <a href="#/state2">Would you prefer Subway?</a>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Mighty Mac
+			<li>Calories - 660</li>
+			<li>Price - From €4 up to €7.70 max meal excluding extra bacon, cheese and side portions</li>
+		   </div>
+		</div>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Cheese Steak Sandwich
+			<li>Calories - 392</li>
+			<li>Price - From €4.95 up to €7.90 max meal excluding extra bacon, cheese and side portions</li>
+		   </div>
+		</div>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Veggie Burger
+			<li>Calories - 30</li>
+			<li>Price - From €2.75 up to €6.50 max meal exluding extra bacon, cheese and side portions</li>
+		   </div>
+		</div>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Chicken Lunch Box			
+			<li>Calories - 723</li>			
+			<li>Price - From €8.25 up to €8.70 max meal excluding side portions</li>
+		   </div>		
+		</div>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Chicken Wrap
+			<li>Calories - 432.5</li>
+			<li>Price - From €4.25 up to €7.65 max meal excluding extra bacon, cheese and side portions</li>
+		   
+		   </div>
+		</div>		
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <script type="text/ng-template" id="state2.html">
+      <ion-view view-title="Two">
+        <ion-content>
+          <h2>Subway!</h2>
+           <a href="#/state3">Would you prefer McDonalds?</a>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Meatball Marinara
+			<li>Calories - 480</li>
+			<li>Price - From €4.10 6 inches up to €6.30 a footlong excluding sides</li>
+		   </div>
+		</div>
+		<div class="card">
+		   <div class="item item-text-wrap">
+			Italian B.M.T
+			<li>Calories - 410 </li>
+			<li>Price - From €4.10 6 inches up to €6.30 a footlong excluding sides</li>
+		   </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Tuna
+			<li>Calories - 490</li>
+			<li>Price - From €3.70 6 inches up to €5.90 a footlong excluding sides</li>
+		   </div>
+		</div>   
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Veggie Patty
+			<li>Calories - 390</li>
+			<li>Price - From €4.40 6inches up to €6.60 a footlong excluding sides</li>
+		   </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Chicken Pizzola
+			<li>Calories - 450</li>
+			<li>Price - From €4.40 6 inches up to €6.60 a footlong excluding sides</li>
+		    </div>
+		</div>     
+</ion-content>
+      </ion-view>
+    </script>
+
+    <script type="text/ng-template" id="state3.html">
+       <ion-view view-title="Three">
+        <ion-content>
+          <h2>McDonalds!</h2>
+            <a href="#/state4">Would you prefer Burger King?</a>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Big Mac
+			<li>Calories - 530</li>
+			<li>Price - From €
+         </ion-content>
+      </ion-view>
+    </script>
+
+    <script type="text/ng-template" id="state4.html">
+       <ion-view view-title="Four">
+         <ion-content>
+           <h2>Burger King!</h2>
+	     <a href="#/state5">Would you prefer Hillbillys?</a>
+          </ion-content>
+      </ion-view>
+    </script>
+
+    <script type="text/ng-template" id="state5.html">
+	<ion-view view title="Five">
+	  <ion-content>
+	    <h2>Hillbillys!</h2>
+	  </ion-content>
+	</ion-view>
   </body>
-</html>
+
