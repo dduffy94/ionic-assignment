@@ -21,27 +21,27 @@
 
         .state('state1', {
           url: '/',
-          templateUrl: 'state1.html'
+          templateUrl: 'supermacs.html'
         })
 
         .state('state2', {
           url: '/state2',
-          templateUrl: 'state2.html'
+          templateUrl: 'subway.html'
         })
 
 	.state('state3', {
           url: '/state3',
-          templateUrl: 'state3.html'
+          templateUrl: 'mcdonalds.html'
        })
 
 	 .state('state4', {
           url: '/state4',
-          templateUrl: 'state4.html'
+          templateUrl: 'apache.html'
        })
 	
 	 .state('state5', {
           url: '/state5',
-          templateUrl: 'state5.html'
+          templateUrl: 'general.html'
        });
 	
 })
@@ -49,11 +49,11 @@
 
   </head>
   <body ng-app="ionic-navview">
-    <ion-nav-view>
-    </ion-nav-view>
+    <ion-nav-view>  
+  </ion-nav-view>
 
-    <script type="text/ng-template" id="state1.html">
-      <ion-view view-title="Home">
+    <script type="text/ng-template" id="supermacs.html">
+      <ion-view view-title="Supermacs">
         <iion-content>
           <h2>Supermacs!</h2>
           <a href="#/state2">Would you prefer Subway?</a>
@@ -97,8 +97,8 @@
       </ion-view>
     </script>
 
-    <script type="text/ng-template" id="state2.html">
-      <ion-view view-title="Two">
+    <script type="text/ng-template" id="subway.html">
+      <ion-view view-title="Subway">
         <ion-content>
           <h2>Subway!</h2>
            <a href="#/state3">Would you prefer McDonalds?</a>
@@ -136,38 +136,274 @@
 			<li>Calories - 450</li>
 			<li>Price - From €4.40 6 inches up to €6.60 a footlong excluding sides</li>
 		    </div>
-		</div>     
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Chicken and Bacon Ranch Melt
+			<li>Calories - 600</li>
+			<li>Price - From €4.40 6 inches up to €6.60 a footlong excluding sides</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Big Beef Melt
+			<li>Calories - 408</li>
+			<li>Price - From €3.70 6 inches up to €5.90 a footlong excluding sides</li>
+		    </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			Turkey breast & Ham
+			<li>Calories - 330</li>
+			<li>Price - From €3.70 6 inches up to €5.90 a footlong excluding sides</li>     
 </ion-content>
       </ion-view>
     </script>
 
-    <script type="text/ng-template" id="state3.html">
-       <ion-view view-title="Three">
+    <script type="text/ng-template" id="mcdonalds.html">
+       <ion-view view-title="McDonalds">
         <ion-content>
           <h2>McDonalds!</h2>
-            <a href="#/state4">Would you prefer Burger King?</a>
+            <a href="#/state4">Would you prefer Apache Pizza?</a>
 		<div class="card">
 		    <div class="item item-text-wrap">
 			Big Mac
 			<li>Calories - 530</li>
-			<li>Price - From €
+			<li>Price - From €4.30 up to €7.25 chips and a carbonated soft drink included</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Chicken Legend
+			<li>Calories - 550</li>
+			<li>Price - From €5.50 up to €8.25 chips and a carbonated soft drink included</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Eurosaver Apple Pie
+			<li>Calories - 250</li>
+			<li>Price - From €1</li>
+		   </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			6 Chicken McNuggets
+			<li>Calories - 190</li>
+			<li>Price - From €2</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Twisty Fries
+			<li>Calories - 520</li>
+			<li>Price - From €2</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Hamburger
+			<li>Calories - 255</li>
+			<li>Price - From €1</li>
+		   </div>
+		</div>
+		<div class="card">
+`		    <div class="item item-text-wrap">
+			Mayo/Chilli Chicken Burger
+			<li>Calories - 332/342 respectively</li>
+			<li>Price - From €1.50</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Dbl cheese Burger
+			<li>Calories - 431</li>
+			<li>Price - €2</li>
          </ion-content>
       </ion-view>
     </script>
 
-    <script type="text/ng-template" id="state4.html">
-       <ion-view view-title="Four">
+    <script type="text/ng-template" id="apache.html">
+       <ion-view view-title="Apache">
          <ion-content>
-           <h2>Burger King!</h2>
-	     <a href="#/state5">Would you prefer Hillbillys?</a>
+           <h2>Apache Pizza!</h2>
+		<a href="#/state5">Would you like to see some common items between restaurants?</a>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			All pizzas priced at €6 personal 4 slices, €8 small 6 slices, €10 medium 8 slices 2-3 persons, €10 large 8 slices 3-4 persons
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Wigwammer - Dbl decker pepperoni, dbl extra mozzarella pizza</li>
+			<li>Calories - 445</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Buffalo - Pepperoni, Ham, Crispy Bacon, Tender chicken</li>
+			<li>Calories - 460</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>The Big Buffalo - Pepperoni, Ham, American style beef balls, bacon, chicken, sausage</li>
+			<li>Calories - 495</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Apache Special - Pepperoni, Ham, Mushrooms, Onions, Peppers, Fresh sweetcorn, Extra cheese, Caribbean pineapple</li>
+			<li>Calories - 444</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Cajun Apache - Cajun Chicken, Fresh tomatoes, Jalapenos, Extra mozzarella</li>
+			<li>Calories - 382</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>The Big Chief - American style beef balls, Pepperoni, Sausage</li>
+			<li>Calories - 568</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Chicken Apache - Chicken, Fresh mushrooms, Sweetcorn, Caribbean pineapple</li>
+			<li>Calories - 349</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Hawaiian - Cooked ham, Caribbean pineapple, Extra mozzarella</li>
+			<li>Calories - 364</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Tomahawk - Pepperoni, Peppers, Garlic, Vine ripened cherry tomatoes, Extra mozzarella</li>
+			<li>Calories - 409</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>All Day Breakfast - Sausage, Crispy bacon, Fresh mushrooms, Onions, Vine ripened tomatoes</li>
+			<li>Calories - 405</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Vegetarian - Mushrooms, Red onions, Peppers, Vine ripened cherry tomatoes, Sweetcorn</li>
+			<li>Calories - 344</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Hot Apache - Pepperoni, Jalapenos, Red onions, Extra mozzarella, Chilli shake</li>
+			<li>Calories - 468</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Bacon Apache - Bacon, Mushrooms, Onions, Extra cheese</li>
+			<li>Calories - 470</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Mediterranean Vegetarian - Vine ripened tomatoes, Olives, Red onions, Extra cheese</li>
+			<li>Calories - 396</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Mexican Pepper Volcano - Grilled cajun chicken, American style meatballs, Jalapenos, Peppers & Fresh chilli peppers on a sweet & tangy bbq base</li>
+			<li>Calories - 351</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Texas Beef Fiesta - Jalapenos, Chilli beef, Red onions, Fresh mushrooms, Cheddar & chilli shake on a swett & tangy bbq base</li>
+			<li>Calories - 428</li>
+		     </div>
+		</div>
+		<div class="card">
+		     <div class="item item-text-wrap">
+			<li>Geronimo - Pepperoni, Red onions, Peppers, Mushrooms, Fresh sweetcorn</li>
+			<li>Calories - 396</li>
+		    </div>
+		</div>
+	     
           </ion-content>
       </ion-view>
     </script>
 
-    <script type="text/ng-template" id="state5.html">
-	<ion-view view title="Five">
+    <script type="text/ng-template" id="general.html">
+	<ion-view view title="General">
 	  <ion-content>
-	    <h2>Hillbillys!</h2>
+	    <h2>General stuff!</h2>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Coke
+			<li>Calories - 150</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Diet Coke
+			<li>Calories - 0</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Coke Zero
+			<li>Calories - 0</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Fanta Orange
+			<li>Calories - 160</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Sprite
+			<li>Calories - 140</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			7UP
+			<li>Calories - 100</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Pepsi
+			<li>Calories - 250</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Diet Pepsi
+			<li>Calories - 0</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Pepsi Max
+			<li>Calories - 0</li>
+		    </div>
+		</div>
+		<div class="card">
+		    <div class="item item-text-wrap">
+			Water
+			<li>Calories - 0</li>
+		    </div>
+		</div>
 	  </ion-content>
 	</ion-view>
   </body>
