@@ -2314,6 +2314,7 @@ html {
  * Remove default margin.
  */
 body {
+  background-color: #E80000;
   margin: 0;
   line-height: 1; }
 
