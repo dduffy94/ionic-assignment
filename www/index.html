@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Calorific</title>
+    <title>Calorific</title><!--Name of app-->
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -19,27 +19,27 @@
 
         $stateProvider
 
-        .state('state1', {
+        .state('state1', { <!--Page 1 is the first of five states but page 1 is set as the homepage-->
           url: '/',
           templateUrl: 'supermacs.html'
         })
 
-        .state('state2', {
+        .state('state2', { <!--Page 2 following on from the homepage-->
           url: '/state2',
           templateUrl: 'subway.html'
         })
 
-	.state('state3', {
+	.state('state3', { <!--Page 3 follows the example as set out by the second page-->
           url: '/state3',
           templateUrl: 'mcdonalds.html'
        })
 
-	 .state('state4', {
+	 .state('state4', { <!--Page 4 continues the trend here-->
           url: '/state4',
           templateUrl: 'apache.html'
        })
 	
-	 .state('state5', {
+	 .state('state5', { <!--Page 5 however displays common items between the restaurants-->
           url: '/state5',
           templateUrl: 'general.html'
        });
@@ -48,30 +48,30 @@
     </script>
 
   </head>
-  <body ng-app="ionic-navview">
+  <body ng-app="ionic-navview"> <!--sets up the default state of the page-->
     <ion-nav-view>  
   </ion-nav-view>
 
     <script type="text/ng-template" id="supermacs.html">
       <ion-view view-title="Supermacs">
-        <ion-content>
-	 <ion-header-bar class="bar-assertive">
+        <ion-content> <!--Contains content displayed on the whole page-->
+	 <ion-header-bar class="bar-assertive"> <!--Adds color the header bar-->
           <h1 class="title">Supermacs!</h1>
 	</ion-header-bar>
 	<br></br>
-          <a href="#/state2">Would you prefer Subway?</a>
-		<div class="card">
-		   <div class="item item-text-wrap item-assertive">
-			Mighty Mac
-			<li>Calories - 660</li>
-			<li>Price - From €4 up to €7.70 max meal excluding extra bacon, cheese and side portions</li>
-		   </div>
-		</div>
-		<div class="card">
-		   <div class="item item-text-wrap item-assertive">
+          <a href="#/state2">Would you prefer Subway?</a> <!--Link to second page-->
+		<div class="card"> <!--Starts a card section-->
+		   <div class="item item-text-wrap item-assertive"> <!--Wraps the thext onto seperate lines and colors the card-->
+			Mighty Mac <!--Name of food-->
+			<li>Calories - 660</li> <!--starts a list item-->
+			<li>Price - From €4 up to €7.70 max meal excluding extra bacon, cheese and side portions</li> <!--Ends the list items on the present card-->
+		   </div> <!--ends div card-->
+		</div> <!ends div item-->
+		<div class="card"> <!--starts second card-->
+		   <div class="item item-text-wrap item-assertive"> <!--Red is mainly used here because it is the main color of supermacs alongside white-->
 			Cheese Steak Sandwich
-			<li>Calories - 392</li>
-			<li>Price - From €4.95 up to €7.90 max meal excluding extra bacon, cheese and side portions</li>
+			<li>Calories - 392</li> <!--Displays Calories of meal-->
+			<li>Price - From €4.95 up to €7.90 max meal excluding extra bacon, cheese and side portions</li> <!--Displays the price range of said meal-->
 		   </div>
 		</div>
 		<div class="card">
@@ -152,13 +152,13 @@
     <script type="text/ng-template" id="subway.html">
       <ion-view view-title="Subway">
         <ion-content>
-	 <ion-header-bar class="bar-energized">
+	 <ion-header-bar class="bar-energized"><!--Using different colors here-->
           <h1 class="title">Subway!</h1>
 	 </ion-header-bar>
         <br></br>  
-	 <a href="#/state3">Would you prefer McDonalds?</a>
+	 <a href="#/state3">Would you prefer McDonalds?</a><!--Another link to the third page-->
 		<div class="card">
-		   <div class="item item-text-wrap item-energized">
+		   <div class="item item-text-wrap item-energized"><!--Special deal here is coloured the same as the header because green, yellow and white are the main colors of subway-->
 			Sub of the Day 6 inch at €3:
 			Mon - Turkey Breast,
 			Tues - Spicy Italian,
@@ -172,7 +172,7 @@
 
 
 		<div class="card">
-		   <div class="item item-text-wrap item-balanced">
+		   <div class="item item-text-wrap item-balanced"><!--different color used here - green one of the main colors subway use-->
 			Meatball Marinara
 			<li>Calories - 480</li>
 			<li>Price - From €4.10 6 inches up to €6.30 a footlong excluding sides</li>
@@ -262,11 +262,11 @@
     <script type="text/ng-template" id="mcdonalds.html">
        <ion-view view-title="McDonalds">
         <ion-content>
-	 <ion-header-bar class="bar-assertive">
+	 <ion-header-bar class="bar-assertive"><!--Red and yellow are main colors McDonalds use thats why those colors are present here-->
           <h1 class="title">McDonalds!</h1>
 	</ion-header-bar>
 	<br></br>
-            <a href="#/state4">Would you prefer Apache Pizza?</a>
+            <a href="#/state4">Would you prefer Apache Pizza?</a> <!--link to third page-->
 		<div class="card">
 		    <div class="item item-text-wrap item-energized">
 			Big Mac
@@ -330,20 +330,20 @@
     <script type="text/ng-template" id="apache.html">
        <ion-view view-title="Apache">
          <ion-content>
-	  <ion-header-bar class="bar-light">
+	  <ion-header-bar class="bar-light"> <!--Main colours of Apache are white, yellow and red-->
            <h1 class="title">Apache Pizza!</h1>
 	  </ion-header-bar>
 	<br></br>
-		<a href="#/state5">Would you like to see some common items between restaurants?</a>
+		<a href="#/state5">Would you like to see some common items between restaurants?</a> <!--Sends viewer to a page containing the common items between all of these chain restaurants-->
 		<div class="card">
-		     <div class="item item-text-wrap item-energized">
-			All pizzas priced at €6 personal 4 slices, €8 small 6 slices, €10 medium 8 slices 2-3 persons, €10 large 8 slices 3-4 persons
+		     <div class="item item-text-wrap item-energized"> <!--Apache pizza support the colors white, yellow and red-->
+			All pizzas priced at €6 personal 4 slices, €8 small 6 slices, €10 medium 8 slices 2-3 persons, €10 large 8 slices 3-4 persons <!--Here the prices are uniform so they are displayed prominantly here-->
 		     </div>
 		</div>
 		<div class="card">
 		     <div class="item item-text-wrap item-assertive">
 			<li>Wigwammer - Dbl decker pepperoni, dbl extra mozzarella pizza</li>
-			<li>Calories - 445</li>
+			<li>Calories - 445</li> <!--Prices are removed from hereas they are displayed inside the yellow header-->
 		     </div>
 		</div>
 		<div class="card">
@@ -450,20 +450,20 @@
     <script type="text/ng-template" id="general.html">
 	<ion-view view title="General">
 	  <ion-content>
-	   <ion-header-bar class="bar-royal">
-	    <h1 class="title">General stuff!</h1>
+	   <ion-header-bar class="bar-royal"><!--The colors purple and black are used here-->
+	    <h1 class="title">General stuff!</h1> <!--Contains the common items between all the restaurants-->
 	   </ion-header-bar>
 	<br></br>
 		<div class="card">
-		    <div class="item item-text-wrap item-dark">
+		    <div class="item item-text-wrap item-dark"> <!--colors the card black-->
 			Tea
-			<li>Calories - Black: 0 Milk: 25 Herbal: 0-5</li>
+			<li>Calories - Black: 0 Milk: 25 Herbal: 0-5</li> <!--displays calories of the different kinds of tea-->
 		    </div>
 		</div>
 		<div class="card">
 		    <div class="item item-text-wrap item-dark">
 			Coffee
-			<li>Calories - Black: 0 Cappucino: 110 Latte: 150 Mocha: 230</li>
+			<li>Calories - Black: 0 Cappucino: 110 Latte: 150 Mocha: 230</li> <!--Displays calories of all the different kinds of coffee-->
 		    </div>
 		</div>
 		<div class="card">
@@ -544,7 +544,7 @@
 			<li>Calories - 18</li>
 		     </div>
 		</div>
-	  </ion-content>
-	</ion-view>
-  </body>
+	  </ion-content><!--Ends ion content from start of code-->
+	</ion-view><!--Ends ion-view template-->
+  </body><!--ends body-->
 
